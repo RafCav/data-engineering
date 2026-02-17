@@ -4,10 +4,6 @@ import pandas_gbq
 import requests
 from config import load_config
 
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', None)
-pd.set_option('display.max_colwidth', None)
 
 def fetch_endpoint(product_endpoint: str, body: dict):
     response = requests.post(
