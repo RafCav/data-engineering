@@ -49,7 +49,7 @@ def integration():
     else:
         print('No data to save')
 
-    return '200'
+    return {"status": "success", "message": "Integration completed"}, 200
 
 
 if __name__ == "__main__":
